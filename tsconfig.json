@@ -1,0 +1,17 @@
+{
+  "include": ["src/**/*"],
+  "compilerOptions": {
+    "outDir": "./dist",
+     "module": "commonjs", // Changed from "nodenext"
+    "target": "es2022",
+     "moduleResolution": "node", // Changed from "NodeNext"
+    "strict": true,
+    "esModuleInterop": true,
+    "declaration": true,
+    "importHelpers": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "types": ["jest"]  // Added this line
+  },
+    "exclude": ["node_modules", "**/*.test.ts"] // you might want to exclude the test files from compilation.
+}
